@@ -1,5 +1,6 @@
 import { IconName } from "@/resources/icons";
 import { zones } from "tzdata";
+import type { StaticImageData } from 'next/image'
 
 /**
  * IANA time zone string (e.g., 'Asia/Calcutta', 'Europe/Vienna').
@@ -20,7 +21,7 @@ export type Person = {
   /** Role or job title */
   role: string;
   /** Path to avatar image */
-  avatar: string;
+  avatar: string | StaticImageData;
   /** Email address */
   email: string;
   /** IANA time zone location */
