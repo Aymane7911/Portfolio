@@ -7,9 +7,12 @@ const withMDX = mdx({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+   output: 'export', // Add this for static export
+  basePath: '/Portfolio', // Add your repo name
   pageExtensions: ["ts", "tsx", "md", "mdx"],
   transpilePackages: ["next-mdx-remote"],
   images: {
+    unoptimized: true, // Required for static export
     remotePatterns: [
       {
         protocol: "https",
