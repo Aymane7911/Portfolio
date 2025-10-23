@@ -1,12 +1,12 @@
 import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
 import { Line, Logo, Row, Text } from "@once-ui-system/core";
-
+import hackImage from '@/public/images/hack.jpg'
 const person: Person = {
   firstName: "Aymane",
   lastName: "Cherki",
   name: `Aymane Cherki`,
   role: "FullStack Engineer",
-  avatar: "Portfolio/images/hack.jpg",
+  avatar: hackImage,
   email: "aymanafcat@gmail.com",
   location: "Asia/Dubai", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Arabic", "French", "Japanese"], // optional: Leave the array empty if you don't want to display languages
